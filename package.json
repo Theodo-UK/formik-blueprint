@@ -1,0 +1,40 @@
+{
+  "name": "formik-blueprint",
+  "version": "0.0.1",
+  "description": "Put a description here",
+  "private": true,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "peerDependencies": {
+    "@blueprintjs/core": "^3.17.1",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.0.12",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "formik": "^1.5.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "yarn build"
+  },
+  "author": {
+    "name": "Leo Siddall-Butchers",
+    "email": "leosb@theodo.co.uk"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.0.4",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
