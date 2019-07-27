@@ -4,6 +4,9 @@
   "description": "A wrapper around blueprint inputs to provide a 'nice' API for formik",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "@blueprintjs/core": "^3.17.1",
     "@types/jest": "^24.0.15",
