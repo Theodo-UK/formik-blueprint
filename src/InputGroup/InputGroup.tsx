@@ -1,20 +1,17 @@
 import {
   InputGroup as BlueprintInputGroup,
   IInputGroupProps,
-  HTMLInputProps
-} from "@blueprintjs/core";
-import React from "react";
+  HTMLInputProps,
+} from '@blueprintjs/core';
+import React from 'react';
+import { FastFieldProps, FieldProps } from 'formik';
 
-import { FastFieldProps, FieldProps } from "formik";
+type PropTypes =
+  | FastFieldProps
+  | FieldProps & IInputGroupProps & HTMLInputProps;
 
-const InputGroup: React.FunctionComponent<
-  FastFieldProps | FieldProps
-  & IInputGroupProps & HTMLInputProps
->
-  = ({ field,
-    form,
-    ...props }) => {
-    return (<BlueprintInputGroup {...field} {...props} />);
-  };
+function InputGroup({ field, form, ...props }: PropTypes): React.ReactElement {
+  return <BlueprintInputGroup {...field} {...props} />;
+}
 
 export default InputGroup;
