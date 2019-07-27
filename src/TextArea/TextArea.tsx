@@ -3,10 +3,9 @@ import {
   ITextAreaProps,
 } from '@blueprintjs/core';
 import React from 'react';
+import { FieldTypes } from 'src/types';
 
-import { FastFieldProps, FieldProps } from 'formik';
-
-type PropTypes = FastFieldProps | FieldProps & ITextAreaProps;
+type PropTypes = FieldTypes & ITextAreaProps;
 
 function TextArea({ field, form, ...props }: PropTypes): React.ReactElement {
   return <BlueprintTextArea {...field} {...props} />;

@@ -4,20 +4,19 @@ import {
   INumericInputProps,
 } from '@blueprintjs/core';
 import React from 'react';
+import { FieldTypes } from 'src/types';
 
-import { FastFieldProps, FieldProps } from 'formik';
-
-type PropTypes =
-  | FastFieldProps
-  | FieldProps & HTMLInputProps & INumericInputProps;
+type PropTypes = FieldTypes & HTMLInputProps & INumericInputProps & { setValueAsString?: boolean };
 
 function NumericInput({
   field: { onChange, ...restField },
   form,
+  setValueAsString,
   ...props
 }: PropTypes): React.ReactElement {
-  const handleValueChange = (valueAsNumber: number): void => {
-    form.setFieldValue(restField.name, valueAsNumber);
+  const handleValueChange = (valueAsNumber: number, valueAsString: string): void => {
+    const value = setValueAsString ? valueAsString : valueAsNumber;
+    form.setFieldValue(restField.name, value);
     form.setFieldTouched(restField.name, true);
   };
   return (
