@@ -13,7 +13,6 @@ function FileInput({
   inputProps,
   ...props
 }: PropTypes): React.ReactElement {
-  console.log(props);
   const { onChange, ...restInputProps } = inputProps || { onChange: undefined };
   const handleFileChange = (event: React.FormEvent<HTMLInputElement>) => {
     onChange && onChange(event);
