@@ -28,7 +28,7 @@
     "name": "Leo Siddall-Butchers",
     "email": "leosb@theodo.co.uk"
   },
-  "repository": "software-lion/formik-blueprint",
+  "repository": "Theodo-UK/formik-blueprint",
   "prettier": {
     "trailingComma": "es5",
     "singleQuote": true,
