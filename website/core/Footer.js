@@ -48,76 +48,24 @@ class Footer extends React.Component {
             </a>
           </div>
           <div>
-            <h5>Community</h5>
-            <a href={this.pageUrl('users.html', this.props.language)}>
-              User Showcase
-            </a>
-            <a
-              href="https://stackoverflow.com/questions/tagged/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Stack Overflow
-            </a>
-            <a href="https://discordapp.com/">Project Chat</a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noreferrer noopener">
-              Twitter
-            </a>
-          </div>
-          <div>
-            <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
-            <a
-              className="github-button"
-              href={this.props.config.repoUrl}
-              data-icon="octicon-star"
-              data-count-href="/facebook/docusaurus/stargazers"
-              data-show-count="true"
-              data-count-aria-label="# stargazers on GitHub"
-              aria-label="Star this project on GitHub">
-              Star
-            </a>
-            {this.props.config.twitterUsername && (
-              <div className="social">
-                <a
-                  href={`https://twitter.com/${
-                    this.props.config.twitterUsername
-                  }`}
-                  className="twitter-follow-button">
-                  Follow @{this.props.config.twitterUsername}
-                </a>
-              </div>
-            )}
-            {this.props.config.facebookAppId && (
-              <div className="social">
-                <div
-                  className="fb-like"
-                  data-href={this.props.config.url}
-                  data-colorscheme="dark"
-                  data-layout="standard"
-                  data-share="true"
-                  data-width="225"
-                  data-show-faces="false"
-                />
-              </div>
-            )}
+            <a href="https://www.npmjs.com/package/formik-blueprint">NPM</a>
+            <a href="https://github.com/Theodo-UK/formik-blueprint">GitHub</a>
+            <a href="mailto:leosb@theodo.co.uk?Subject=formik-blueprint">Talk to me!</a>
           </div>
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://www.theodo.co.uk/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
+            src={`${this.props.config.baseUrl}img/Logo_Theodo_cropped.svg`}
             alt="Facebook Open Source"
             width="170"
             height="45"
           />
+          <h3>Sponsored by Theodo</h3>
         </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
