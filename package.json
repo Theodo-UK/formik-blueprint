@@ -7,7 +7,7 @@
   "files": [
     "lib"
   ],
-  "dependencies": {
+  "peerDependencies": {
     "@blueprintjs/core": "^3.17.1",
     "@types/jest": "^24.0.15",
     "@types/node": "^12.0.12",
